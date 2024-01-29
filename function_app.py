@@ -67,7 +67,7 @@ def http_trigger_vdh_blob(req: func.HttpRequest) -> func.HttpResponse:
         if transformed_data is not None:
             # Save the transformed data to Azure Blob Storage
             save_df_to_azure_blob(account_name, account_key, container_name, blob_name, transformed_data)
-            return func.HttpResponse("ETL process completed successfully via CICD", status_code=200)
+            return func.HttpResponse("ETL process completed successfully via CICD VDH", status_code=200)
         else:
             return func.HttpResponse("Error occurred during data transformation", status_code=500)
     else:
