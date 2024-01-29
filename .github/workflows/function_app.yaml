@@ -1,3 +1,4 @@
+# deploy the code to azure function app
 name: Deploy Python project to Azure Function App
 
 on:
