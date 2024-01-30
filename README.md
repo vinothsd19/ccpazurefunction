@@ -15,7 +15,7 @@ The main components of the ETL pipeline code include:
 Azure Functions are utilized to orchestrate the ETL process. The most common triggers used in the data pipeline are HTTP triggers, blob triggers, and timer triggers. In this case, the HTTP trigger is used to extract and transform the data from the Coincap API, and the blob trigger can be used to activate the function when a new file is added to the Azure Blob Storage.
 
 ## Deployment
-The Azure Function extension in Visual Studio Code is used to author the function in Python. The `function_app.p` file contains the function code, and the required Python packages are listed in the `requirements.txt` file. The deployment of the function to the Azure Function App in the cloud is done using the Azure icon in VS Code and clicking the deploy button.
+The Azure Function extension in Visual Studio Code is used to author the function in Python. The `function_app.py` file contains the function code, and the required Python packages are listed in the `requirements.txt` file. The deployment of the function to the Azure Function App in the cloud is done using the Azure icon in VS Code and clicking the deploy button.
 
 ## Running the ETL Pipeline
 Once the function is deployed and the triggers are set up, the ETL pipeline will run automatically based on the trigger conditions. The ETL process can be orchestrated and monitored through the Azure portal.
